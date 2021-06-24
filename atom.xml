@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>认真de八戒</title>
+  
+  <subtitle>宁静致远</subtitle>
+  <link href="https://cj919837775.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://cj919837775.github.io/"/>
+  <updated>2021-06-24T14:10:07.937Z</updated>
+  <id>https://cj919837775.github.io/</id>
+  
+  <author>
+    <name>chengjia</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>所有节点安装Dockerkubeadmkubeletkubectl</title>
+    <link href="https://cj919837775.github.io/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/"/>
+    <id>https://cj919837775.github.io/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/</id>
+    <published>2021-06-24T14:09:29.144Z</published>
+    <updated>2021-06-24T14:10:07.937Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;1-准备环境&quot;&gt;&lt;a href=&quot;#1-准备环境&quot; class=&quot;headerlink&quot; title=&quot;1. 准备环境&quot;&gt;&lt;/a&gt;1. 准备环境&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;角色&lt;/th&gt;
+&lt;th&gt;IP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;k8s-master&lt;/td&gt;
+&lt;td&gt;192.168.0.213&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;k8s-node1&lt;/td&gt;
+&lt;td&gt;192.168.0.214&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;k8s-node2&lt;/td&gt;
+&lt;td&gt;192.168.0.215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 关闭防火墙：&lt;/span&gt;
+systemctl stop firewalld
+systemctl disable firewalld
+
+&lt;span class=&quot;token comment&quot;&gt;# 关闭selinux：&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; -i &lt;span class=&quot;token string&quot;&gt;&#39;s/enforcing/disabled/&#39;&lt;/span&gt; /etc/selinux/config  &lt;span class=&quot;token comment&quot;&gt;# 永久&lt;/span&gt;
+setenforce &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# 临时&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# 关闭swap：&lt;/span&gt;
+swapoff -a  &lt;span class=&quot;token comment&quot;&gt;# 临时&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;vim&lt;/span&gt; /etc/fstab  &lt;span class=&quot;token comment&quot;&gt;# 永久&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# 设置主机名：&lt;/span&gt;
+hostnamectl set-hostname &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;hostname&lt;span class=&quot;token operator&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# 在master添加hosts：&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;gt;&lt;/span&gt; /etc/hosts &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;EOF
+192.168.0.213 k8s-master
+192.168.0.214 k8s-node1
+192.168.0.215 k8s-node2
+EOF&lt;/span&gt;
+
+
+将桥接的IPv4流量传递到iptables的链：
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;gt;&lt;/span&gt; /etc/sysctl.d/k8s.conf &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;EOF
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF&lt;/span&gt;
+sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://cj919837775.github.io/2021/06/24/hello-world/"/>
+    <id>https://cj919837775.github.io/2021/06/24/hello-world/</id>
+    <published>2021-06-24T12:55:24.370Z</published>
+    <updated>2021-06-24T12:55:24.370Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
