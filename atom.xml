@@ -6,7 +6,7 @@
   <link href="https://jiazone.cn/atom.xml" rel="self"/>
   
   <link href="https://jiazone.cn/"/>
-  <updated>2021-06-24T14:10:07.937Z</updated>
+  <updated>2021-06-24T18:16:02.245Z</updated>
   <id>https://jiazone.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jiazone.cn/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/"/>
     <id>https://jiazone.cn/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/</id>
     <published>2021-06-24T14:09:29.144Z</published>
-    <updated>2021-06-24T14:10:07.937Z</updated>
+    <updated>2021-06-24T18:16:02.245Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;1-准备环境&quot;&gt;&lt;a href=&quot;#1-准备环境&quot; class=&quot;headerlink&quot; title=&quot;1. 准备环境&quot;&gt;&lt;/a&gt;1. 准备环境&lt;/h2&gt;&lt;table&gt;
@@ -76,6 +76,8 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
     
     
     
+    <category term="K8S" scheme="https://jiazone.cn/categories/K8S/"/>
+    
     
   </entry>
   
@@ -84,7 +86,7 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
     <link href="https://jiazone.cn/2021/06/24/hello-world/"/>
     <id>https://jiazone.cn/2021/06/24/hello-world/</id>
     <published>2021-06-24T12:55:24.370Z</published>
-    <updated>2021-06-24T12:55:24.370Z</updated>
+    <updated>2021-06-24T18:15:51.728Z</updated>
     
     
       
@@ -96,6 +98,8 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
       
     
     
+    
+    <category term="Markdown" scheme="https://jiazone.cn/categories/Markdown/"/>
     
     
   </entry>
