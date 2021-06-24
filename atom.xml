@@ -3,23 +3,18 @@
   <title>认真de八戒</title>
   
   <subtitle>宁静致远</subtitle>
-  <link href="https://cj919837775.github.io/atom.xml" rel="self"/>
+  <link href="https://jiazone.cn/atom.xml" rel="self"/>
   
-  <link href="https://cj919837775.github.io/"/>
+  <link href="https://jiazone.cn/"/>
   <updated>2021-06-24T14:10:07.937Z</updated>
-  <id>https://cj919837775.github.io/</id>
-  
-  <author>
-    <name>chengjia</name>
-    
-  </author>
+  <id>https://jiazone.cn/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>所有节点安装Dockerkubeadmkubeletkubectl</title>
-    <link href="https://cj919837775.github.io/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/"/>
-    <id>https://cj919837775.github.io/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/</id>
+    <link href="https://jiazone.cn/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/"/>
+    <id>https://jiazone.cn/2021/06/24/suo-you-jie-dian-an-zhuang-dockerkubeadmkubeletkubectl/</id>
     <published>2021-06-24T14:09:29.144Z</published>
     <updated>2021-06-24T14:10:07.937Z</updated>
     
@@ -81,8 +76,8 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
   
   <entry>
     <title>Hello World</title>
-    <link href="https://cj919837775.github.io/2021/06/24/hello-world/"/>
-    <id>https://cj919837775.github.io/2021/06/24/hello-world/</id>
+    <link href="https://jiazone.cn/2021/06/24/hello-world/"/>
+    <id>https://jiazone.cn/2021/06/24/hello-world/</id>
     <published>2021-06-24T12:55:24.370Z</published>
     <updated>2021-06-24T12:55:24.370Z</updated>
     
