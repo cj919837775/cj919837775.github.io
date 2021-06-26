@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="安装kubeadmkubeletkubectl, 认真de八戒">
+    <meta name="keywords" content="Hello World, 认真de八戒">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>安装kubeadmkubeletkubectl | 认真de八戒</title>
+    <title>Hello World | 认真de八戒</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -241,12 +241,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">安装kubeadmkubeletkubectl</h1>
+                    <h1 class="description center-align post-title">Hello World</h1>
                 </div>
             </div>
         </div>
@@ -360,13 +360,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/K8S/">
-                                <span class="chip bg-color">K8S</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -374,8 +370,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%AE%B9%E5%99%A8/" class="post-category">
-                                容器
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
                             </a>
                         
                     </div>
@@ -387,7 +383,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-26
+                    2021-06-24
                 </div>
                 
 
@@ -401,14 +397,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    795
+                    73
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -431,173 +427,19 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-准备环境"><a href="#1-准备环境" class="headerlink" title="1. 准备环境"></a>1. 准备环境</h2><table>
-<thead>
-<tr>
-<th>角色</th>
-<th>IP</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>k8s-master</td>
-<td>192.168.0.213</td>
-</tr>
-<tr>
-<td>k8s-node1</td>
-<td>192.168.0.214</td>
-</tr>
-<tr>
-<td>k8s-node2</td>
-<td>192.168.0.215</td>
-</tr>
-</tbody></table>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 关闭防火墙：</span>
-systemctl stop firewalld
-systemctl disable firewalld
+                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token comment"># 关闭selinux：</span>
-<span class="token function">sed</span> -i <span class="token string">'s/enforcing/disabled/'</span> /etc/selinux/config  <span class="token comment"># 永久</span>
-setenforce <span class="token number">0</span>  <span class="token comment"># 临时</span>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token comment"># 关闭swap：</span>
-swapoff -a  <span class="token comment"># 临时</span>
-<span class="token function">vim</span> /etc/fstab  <span class="token comment"># 永久</span>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token comment"># 设置主机名：</span>
-hostnamectl set-hostname <span class="token operator">&lt;</span>hostname<span class="token operator">&gt;</span>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token comment"># 在master添加hosts：</span>
-<span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/hosts <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
-192.168.0.213 k8s-master
-192.168.0.214 k8s-node1
-192.168.0.215 k8s-node2
-EOF</span>
-
-
-将桥接的IPv4流量传递到iptables的链：
-<span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/sysctl.d/k8s.conf <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF</span>
-sysctl --system  <span class="token comment"># 生效</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-<span id="more"></span>
-
-
-<h2 id="2-安装Docker-kubeadm-kubelet-kubectl"><a href="#2-安装Docker-kubeadm-kubelet-kubectl" class="headerlink" title="2. 安装Docker/kubeadm/kubelet/kubectl"></a>2. 安装Docker/kubeadm/kubelet/kubectl</h2><h3 id="2-1-安装Docker"><a href="#2-1-安装Docker" class="headerlink" title="2.1 安装Docker"></a>2.1 安装Docker</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo -O /etc/yum.repos.d/docker-ce.repo
-
-yum -y <span class="token function">install</span> docker-ce-18.06.1.ce-3.el7
-
-<span class="token comment"># 配置加速器</span>
-<span class="token function">mkdir</span> /etc/docker
-<span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/docker/daemon.json <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
-{
-  "registry-mirrors": ["https://0yd85e5a.mirror.aliyuncs.com"]
-}
-EOF</span>
-
-systemctl <span class="token builtin class-name">enable</span> docker <span class="token operator">&amp;&amp;</span> systemctl start docker
-
-docker --version
-Docker version <span class="token number">18.06</span>.1-ce, build e68fc7a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-2-添加阿里云YUM软件源"><a href="#2-2-添加阿里云YUM软件源" class="headerlink" title="2.2 添加阿里云YUM软件源"></a>2.2 添加阿里云YUM软件源</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/yum.repos.d/kubernetes.repo <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
-[kubernetes]
-name=Kubernetes
-baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=0
-repo_gpgcheck=0
-gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
-EOF</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-3-安装kubeadm，kubelet和kubectl"><a href="#2-3-安装kubeadm，kubelet和kubectl" class="headerlink" title="2.3 安装kubeadm，kubelet和kubectl"></a>2.3 安装kubeadm，kubelet和kubectl</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">yum <span class="token function">install</span> -y kubeadm-1.18.3 kubectl-1.18.3 kubelet-1.18.3
-
-systemctl <span class="token builtin class-name">enable</span> kubelet<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="3-部署Kubernetes-Master"><a href="#3-部署Kubernetes-Master" class="headerlink" title="3. 部署Kubernetes Master"></a>3. 部署Kubernetes Master</h2><p>在 192.168.0.213 (Master) 执行</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubeadm init <span class="token punctuation">\</span>
---apiserver-advertise-address<span class="token operator">=</span><span class="token number">192.168</span>.0.213 <span class="token punctuation">\</span>
---image-repository registry.aliyuncs.com/google_containers <span class="token punctuation">\</span>
---kubernetes-version v1.18.3 <span class="token punctuation">\</span>
---service-cidr<span class="token operator">=</span><span class="token number">10.96</span>.0.0/12 <span class="token punctuation">\</span>
---pod-network-cidr<span class="token operator">=</span><span class="token number">10.244</span>.0.0/16 <span class="token punctuation">\</span>
---ignore-preflight-errors<span class="token operator">=</span>all<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>or</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># vi kubeadm.conf</span>
-
-apiVersion: kubeadm.k8s.io/v1beta2
-kind: ClusterConfiguration
-kubernetesVersion: v1.18.3
-imageRepository: registry.aliyuncs.com/google_containers 
-networking:
-  podSubnet: <span class="token number">10.244</span>.0.0/16 
-  serviceSubnet: <span class="token number">10.96</span>.0.0/12 
-
-kubeadm init --config kubeadm.conf --ignore-preflight-errors<span class="token operator">=</span>all <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>由于默认拉取镜像地址k8s.gcr.io国内无法访问，这里指定阿里云镜像仓库地址。</p>
-<p>使用kubectl工具：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> -p <span class="token environment constant">$HOME</span>/.kube
-<span class="token function">sudo</span> <span class="token function">cp</span> -i /etc/kubernetes/admin.conf <span class="token environment constant">$HOME</span>/.kube/config
-<span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -u<span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> -g<span class="token variable">)</span></span> <span class="token environment constant">$HOME</span>/.kube/config
-
-kubectl get nodes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="4-加入Kubernetes-Node"><a href="#4-加入Kubernetes-Node" class="headerlink" title="4. 加入Kubernetes Node"></a>4. 加入Kubernetes Node</h2><p>在192.168.0.214/215 (Node) 执行</p>
-<p>向集群添加新节点，执行在kubeadm init输出的kubeadm join命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubeadm <span class="token function">join</span> <span class="token number">192.168</span>.0.213:6443 --token zuw832.jq583xz01n9k24q1 <span class="token punctuation">\</span>
-    --discovery-token-ca-cert-hash sha256:069dd0fa2d23a61dd66441590f90c88a864e1ae08bb8286ca3208a8a95f5b9e2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h2 id="5-安装网络-Calico"><a href="#5-安装网络-Calico" class="headerlink" title="5. 安装网络 Calico"></a>5. 安装网络 Calico</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
-
-
-kubectl get pods -n kube-system<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="6-测试kubernetes集群"><a href="#6-测试kubernetes集群" class="headerlink" title="6. 测试kubernetes集群"></a>6. 测试kubernetes集群</h2><ul>
-<li>验证Pod工作</li>
-<li>验证Pod网络通信</li>
-<li>验证DNS解析</li>
-</ul>
-<p>在Kubernetes集群中创建一个pod，验证是否正常运行：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl create deployment web --image<span class="token operator">=</span>nginx:1.17
-
-kubectl expose deployment web --port<span class="token operator">=</span><span class="token number">80</span> --target-port<span class="token operator">=</span><span class="token number">80</span> --name<span class="token operator">=</span>web-service --type<span class="token operator">=</span>NodePort
-
-kubectl get pods,svc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>访问地址：<a href="http://NodeIP:Port">http://NodeIP:Port</a>  </p>
-<h2 id="7-部署-Dashboard"><a href="#7-部署-Dashboard" class="headerlink" title="7. 部署 Dashboard"></a>7. 部署 Dashboard</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml
-
-<span class="token comment"># 修改镜像地址 recommended.yaml</span>
-image: registry.cn-hangzhou.aliyuncs.com/google_containers/dashboard:v2.0.3
-image: registry.cn-hangzhou.aliyuncs.com/kubernetesui/metrics-scraper:v1.0.4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>默认Dashboard只能集群内部访问，修改Service为NodePort类型，暴露到外部：</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-    <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> kubernetes<span class="token punctuation">-</span>dashboard
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> kubernetes<span class="token punctuation">-</span>dashboard
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> kubernetes<span class="token punctuation">-</span>dashboard
-<span class="token key atrule">spec</span><span class="token punctuation">:</span>
-  <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
-  <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">443</span>
-      <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">8443</span>
-      <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">30001</span>
-  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
-    <span class="token key atrule">k8s-app</span><span class="token punctuation">:</span> kubernetes<span class="token punctuation">-</span>dashboard<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>访问地址：<a target="_blank" rel="noopener" href="https://nodeip:30001/">https://NodeIP:30001</a></p>
-<p>创建service account并绑定默认cluster-admin管理员集群角色：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">kubectl create serviceaccount dashboard-admin -n kube-system
-kubectl create clusterrolebinding dashboard-admin --clusterrole<span class="token operator">=</span>cluster-admin --serviceaccount<span class="token operator">=</span>kube-system:dashboard-admin
-kubectl describe secrets -n kube-system <span class="token variable"><span class="token variable">$(</span>kubectl -n kube-system get secret <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'/dashboard-admin/{print <span class="token variable">$1</span>}'</span><span class="token variable">)</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>使用输出的token登录Dashboard。</p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
             </div>
@@ -624,7 +466,7 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jiazone.cn/2021/06/26/ckqdft29l0003uwnkcfv4fobo.html">https://jiazone.cn/2021/06/26/ckqdft29l0003uwnkcfv4fobo.html</a>
+                    <a href="https://jiazone.cn/2021/06/24/ckqdg8k1t00033onkc9hpcd49.html">https://jiazone.cn/2021/06/24/ckqdg8k1t00033onkc9hpcd49.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -661,11 +503,7 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/K8S/">
-                                    <span class="chip bg-color">K8S</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -835,12 +673,11 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/06/26/ckqdft29l0003uwnkcfv4fobo.html">
+                <a href="/2021/06/26/ckqdg8k1q00013onk2wm7aw60.html">
                     <div class="card-image">
                         
                         
@@ -851,9 +688,9 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
                 </a>
                 <div class="card-content article-content">
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-26
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-26
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -866,7 +703,6 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -882,10 +718,10 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/24/ckqdft29i0001uwnk6bi86c2m.html">
+                <a href="/2021/06/24/ckqdg8k1t00033onkc9hpcd49.html">
                     <div class="card-image">
                         
                         
@@ -911,6 +747,7 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1042,56 +879,6 @@ kubectl describe secrets -n kube-system <span class="token variable"><span class
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="tencent"
-                   type="playlist"
-                   id="2111351828"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
     
 
     <div class="container row center-align"
