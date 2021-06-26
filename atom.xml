@@ -6,7 +6,7 @@
   <link href="https://jiazone.cn/atom.xml" rel="self"/>
   
   <link href="https://jiazone.cn/"/>
-  <updated>2021-06-26T06:32:34.150Z</updated>
+  <updated>2021-06-26T06:54:46.814Z</updated>
   <id>https://jiazone.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jiazone.cn/2021/06/26/%E5%AE%89%E8%A3%85kubeadmkubeletkubectl/"/>
     <id>https://jiazone.cn/2021/06/26/%E5%AE%89%E8%A3%85kubeadmkubeletkubectl/</id>
     <published>2021-06-26T06:29:00.000Z</published>
-    <updated>2021-06-26T06:32:34.150Z</updated>
+    <updated>2021-06-26T06:54:46.814Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;1-准备环境&quot;&gt;&lt;a href=&quot;#1-准备环境&quot; class=&quot;headerlink&quot; title=&quot;1. 准备环境&quot;&gt;&lt;/a&gt;1. 准备环境&lt;/h2&gt;&lt;table&gt;
@@ -88,7 +88,7 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
     <link href="https://jiazone.cn/2021/06/24/hello-world/"/>
     <id>https://jiazone.cn/2021/06/24/hello-world/</id>
     <published>2021-06-24T12:55:24.370Z</published>
-    <updated>2021-06-24T18:15:51.728Z</updated>
+    <updated>2021-06-26T06:54:46.814Z</updated>
     
     
       
