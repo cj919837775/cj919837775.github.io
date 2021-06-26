@@ -6,7 +6,7 @@
   <link href="https://jiazone.cn/atom.xml" rel="self"/>
   
   <link href="https://jiazone.cn/"/>
-  <updated>2021-06-26T06:54:46.814Z</updated>
+  <updated>2021-06-26T08:25:33.091Z</updated>
   <id>https://jiazone.cn/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>安装kubeadmkubeletkubectl</title>
-    <link href="https://jiazone.cn/2021/06/26/ckqdgvkeq0008pgnk58u47mpw.html"/>
-    <id>https://jiazone.cn/2021/06/26/ckqdgvkeq0008pgnk58u47mpw.html</id>
+    <link href="https://jiazone.cn/2021/06/26/ckqdik1su0008hknk3tweeawf.html"/>
+    <id>https://jiazone.cn/2021/06/26/ckqdik1su0008hknk3tweeawf.html</id>
     <published>2021-06-26T06:29:00.000Z</published>
-    <updated>2021-06-26T06:54:46.814Z</updated>
+    <updated>2021-06-26T08:25:33.091Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;1-准备环境&quot;&gt;&lt;a href=&quot;#1-准备环境&quot; class=&quot;headerlink&quot; title=&quot;1. 准备环境&quot;&gt;&lt;/a&gt;1. 准备环境&lt;/h2&gt;&lt;table&gt;
@@ -85,10 +85,10 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
   
   <entry>
     <title>Hello World</title>
-    <link href="https://jiazone.cn/2021/06/24/ckqdgvkdz0001pgnk60717ni0.html"/>
-    <id>https://jiazone.cn/2021/06/24/ckqdgvkdz0001pgnk60717ni0.html</id>
+    <link href="https://jiazone.cn/2021/06/24/ckqdik1s00001hknk5rrjhdqd.html"/>
+    <id>https://jiazone.cn/2021/06/24/ckqdik1s00001hknk5rrjhdqd.html</id>
     <published>2021-06-24T12:55:24.370Z</published>
-    <updated>2021-06-26T06:54:46.814Z</updated>
+    <updated>2021-06-26T08:22:48.662Z</updated>
     
     
       
