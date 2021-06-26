@@ -6,7 +6,7 @@
   <link href="https://jiazone.cn/atom.xml" rel="self"/>
   
   <link href="https://jiazone.cn/"/>
-  <updated>2021-06-24T18:16:02.245Z</updated>
+  <updated>2021-06-26T06:32:34.150Z</updated>
   <id>https://jiazone.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>所有节点安装Dockerkubeadmkubeletkubectl</title>
-    <link href="https://jiazone.cn/2021/06/24/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AE%89%E8%A3%85Dockerkubeadmkubeletkubectl/"/>
-    <id>https://jiazone.cn/2021/06/24/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AE%89%E8%A3%85Dockerkubeadmkubeletkubectl/</id>
-    <published>2021-06-24T14:09:29.144Z</published>
-    <updated>2021-06-24T18:16:02.245Z</updated>
+    <title>安装kubeadmkubeletkubectl</title>
+    <link href="https://jiazone.cn/2021/06/26/%E5%AE%89%E8%A3%85kubeadmkubeletkubectl/"/>
+    <id>https://jiazone.cn/2021/06/26/%E5%AE%89%E8%A3%85kubeadmkubeletkubectl/</id>
+    <published>2021-06-26T06:29:00.000Z</published>
+    <updated>2021-06-26T06:32:34.150Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;1-准备环境&quot;&gt;&lt;a href=&quot;#1-准备环境&quot; class=&quot;headerlink&quot; title=&quot;1. 准备环境&quot;&gt;&lt;/a&gt;1. 准备环境&lt;/h2&gt;&lt;table&gt;
@@ -76,8 +76,10 @@ sysctl --system  &lt;span class=&quot;token comment&quot;&gt;# 生效&lt;/span&g
     
     
     
-    <category term="K8S" scheme="https://jiazone.cn/categories/K8S/"/>
+    <category term="容器" scheme="https://jiazone.cn/categories/%E5%AE%B9%E5%99%A8/"/>
     
+    
+    <category term="K8S" scheme="https://jiazone.cn/tags/K8S/"/>
     
   </entry>
   
